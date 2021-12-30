@@ -1,7 +1,7 @@
 import Vue from 'vue'
  import VueRouter from 'vue-router'  
 
-const Home=() => import('../views/home.vue')
+const Home=() => import('../views/home/home.vue')
 const Dif=() => import('../views/dif.vue')
 const Cart=() => import('../views/cart.vue')
 const Mine=() => import('../views/mine.vue')
