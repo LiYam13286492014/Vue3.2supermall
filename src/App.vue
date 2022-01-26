@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <tab-bar>
+    <tab-bar class="tabbar">
       <tab-bar-item  path='/home' >
         <img slot="img" src="./assets/img/svg/home.svg" alt="">
         <img slot="actimg" src="./assets/img/svg/homeactive.svg" alt="">
@@ -31,7 +31,9 @@
       </tab-bar-item>
     </tab-bar>
 
+    <keep-alive exclude="Detail">
     <router-view></router-view>
+    </keep-alive>
   </div>
     
     
@@ -52,6 +54,10 @@ export default {
 
 <style>
 @import './assets/css/base.css';
+
+.tabbar{
+  z-index: 9;
+}
 
 
 

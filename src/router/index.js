@@ -3,8 +3,10 @@ import Vue from 'vue'
 
 const Home=() => import('../views/home/home.vue')
 const Dif=() => import('../views/dif.vue')
-const Cart=() => import('../views/cart.vue')
+const Cart=() => import('../views/cart/cart.vue')
 const Mine=() => import('../views/mine.vue')
+const Detail=() => import('../views/detail/detail.vue')
+
 
 Vue.use(VueRouter)
 const routes=[
@@ -46,6 +48,14 @@ const routes=[
             title:'我的'
         }
     },
+
+    {
+        path: '/detail/:iid',
+        component: Detail,
+        meta: {
+            title: '详情'
+        }
+    }
 
 ]
 
